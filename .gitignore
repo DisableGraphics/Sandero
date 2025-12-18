@@ -1,0 +1,9 @@
+*.iso
+isodir
+sysroot
+*tar.xz
+build
+build-binutils
+build-gcc
+*.serial
+cross
