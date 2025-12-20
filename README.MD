@@ -41,3 +41,10 @@ Yes. Specifically a [Megalithic kernel](https://wiki.osdev.org/Megalithic_Kernel
 ## Is this actually usable?
 Right now no.
 However, since all functionality is done in "user space" (ring 0 tasks) you can technically write a full OS.
+
+## How to compile
+```
+chmod +x cross-compiler.sh
+./cross-compiler.sh
+./qemu.sh
+```
