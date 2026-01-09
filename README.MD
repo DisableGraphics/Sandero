@@ -16,7 +16,9 @@ CMake                            4              3              2             21
 SUM:                            22            146             97            754
 -------------------------------------------------------------------------------
 ```
-What I present, ladies and gentlemen, is a full kernel made in ~750 LOC and in ~5 hours for x86.
+What I present, ladies and gentlemen, is a full kernel made in ~750 LOC and in ~5 hours for x86.*
+
+*754 lines of code only in the kernel/ folder. libc includes some required functions (like memcpy/memmove) for the compiler and setjmp/longjmp.
 
 ## Kernel design
 Of course there is a trick here:
