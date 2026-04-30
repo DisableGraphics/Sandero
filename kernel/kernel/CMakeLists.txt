@@ -3,4 +3,5 @@ target_sources(kernel_obj PRIVATE
 	alloc.c
 	sched.c
 	parse.c
+	sysc.c
 	)
