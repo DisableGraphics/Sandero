@@ -7,6 +7,9 @@ setjmp:
 	mov %esi,12(%ecx)
 	mov %edi,16(%ecx)
 	mov %ebp,20(%ecx)
+	pushf					// EFLAGS
+	pop %eax
+	mov %eax,24(%ecx)
 	lea 4(%esp), %eax 		// Push the correct ESP (not really the current one)
 	mov %eax,4(%ecx) 
 	xor %eax,%eax

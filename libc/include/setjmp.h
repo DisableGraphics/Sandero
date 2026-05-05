@@ -1,5 +1,5 @@
 #pragma once
-typedef void *jmp_buf[6];
+typedef void *jmp_buf[7];
 
 __attribute__((naked,returns_twice))
 int setjmp(jmp_buf buf);

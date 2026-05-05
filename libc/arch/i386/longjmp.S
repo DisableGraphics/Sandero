@@ -8,6 +8,9 @@ longjmp:
 	mov 12(%ecx),%esi
 	mov 16(%ecx),%edi
 	mov 20(%ecx),%ebp
+	mov 24(%ecx),%eax // FUCKING EFLAGS
+	push %eax
+	popf
 	mov 4(%ecx),%esp
 	// Return value into eax
 	mov %edx,%eax

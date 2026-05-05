@@ -7,3 +7,4 @@ build-binutils
 build-gcc
 *.serial
 cross
+compile_commands.json
