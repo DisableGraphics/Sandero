@@ -8,17 +8,17 @@ First of all, this is what cloc has to say about this project:
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
 C/C++ Header                     6             70             32            369
-C                                6             47             21            262
+C                                7             47             21            263
 Assembly                         5             20             28             79
 Linker Script                    1              6             14             23
-CMake                            4              3              2             21
+CMake                            4              3              2             22
 -------------------------------------------------------------------------------
-SUM:                            22            146             97            754
+SUM:                            23            146             97            756
 -------------------------------------------------------------------------------
 ```
-What I present, ladies and gentlemen, is a full kernel made in ~750 LOC and in ~5 hours for x86.*
+What I present, ladies and gentlemen, is a full kernel made in ~760 LOC and in ~5 hours for x86.*
 
-*754 lines of code only in the kernel/ folder. libc includes some required functions (like memcpy/memmove) for the compiler and setjmp/longjmp.
+*756 lines of code only in the kernel/ folder. libc includes some required functions (like memcpy/memmove) for the compiler and setjmp/longjmp.
 
 ## Kernel design
 Of course there is a trick here:
