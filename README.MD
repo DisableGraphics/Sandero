@@ -48,5 +48,8 @@ However, since all functionality is done in "user space" (ring 0 tasks) you can 
 ```
 chmod +x cross-compiler.sh
 ./cross-compiler.sh
+mkdir build
+cd build
+cmake .. -DCMAKE_TOOLCHAIN_FILE=../i686-elf.cmake
 ./qemu.sh
 ```
